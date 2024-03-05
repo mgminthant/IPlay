@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+
+<body>
+    <div class="home">
+        <div class="middle-text">
+            <div class="text">
+                <h5 class="chef">Click and Check</h5>
+                <h1>Test your Memory</h1>
+                <span>Memory" is a fun game that you may have played in "real life", with actual paper tiles. It's
+                    called that because the main skill in the game is
+                    your memory - how well you can remember the position of tiles.
+                    It's also a game that can be re-created on a computer, and is a good example of using computer
+                    memory to remember information, like with arrays.</span><br>
+                <br>
+                <button id="start" hx-get="/game.html" hx-target=".parent" onclick="closebot()">Get Started</button>
+            </div>
+            <div class="img-container">
+                <img src="./img/memory.webp" alt="">
+            </div>
+        </div>
+        <h1 class="offer">What we offer?</h1>
+        <div class="offer_parent">
+            <h3>Logic</h3>
+            <div class="alb">
+                <div class="inn"></div>
+            </div> <br>
+            <div class="album album-1">
+                <div class="album_text">
+                    To make the game, we will need to re-create the physical parts of the game using our drawing
+                    commands
+                    and implement the rules of the game using variables and logic. We will make a single-player version
+                    of the game, which will simplify some of the logic. Here's an outline of what we'll implement:
+                </div>
+                <img src="./img/game.jpg" alt="" class="albsum_img">
+            </div>
+            <h3>Flip Back</h3>
+            <div class="fav">
+                <div class="inn"></div>
+            </div> <br>
+            <div class="album-2 album">
+                <img src="./img/flip.jpg" alt="" class="albsum_img">
+                <div class="album_text">The game consists of an even number of tiles with images on one side and a
+                    generic back. Each image appears on precisely two tiles.
+                    When the game starts, all tiles are turned face down.
+                    The player then flips over two cards, selecting them by clicking on them. If the two tiles have the
+                    same image, they remain face up. Otherwise, the tiles flip back over after a small period of time.
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">Design and developed by <span>Thuar Hein</span></div>
+</body>
+
+</html>

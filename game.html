@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <section class="app">
+        <div class="card-game" data-framework="card1">
+            <img src="./img/card1.jpg" alt="" srcset="" class="img">
+            <img src="./img/coverp.png" alt="" class="cover">
+        </div>
+        <div class="card-game" data-framework="card2">
+            <img src="./img/card2.png" alt="" srcset="" class="img">
+            <img src="./img/coverp.png" alt="" class="cover">
+        </div>
+        <div class="card-game" data-framework="card3">
+            <img src="./img/card3.jpg" alt="" srcset="" class="img">
+            <img src="./img/coverp.png" alt="" class="cover">
+        </div>
+        <div class="card-game" data-framework="card4">
+            <img src="./img/card4.png" alt="" srcset="" class="img">
+            <img src="./img/coverp.png" alt="" class="cover">
+        </div>
+        <div class="card-game" data-framework="card5">
+            <img src="./img/card5.png" alt="" srcset="" class="img">
+            <img src="./img/coverp.png" alt="" class="cover">
+        </div>
+        <div class="card-game" data-framework="card6">
+            <img src="./img/card5.png" alt="" srcset="" class="img">
+            <img src="./img/coverp.png" alt="" class="cover">
+        </div>
+        <div class="card-game" data-framework="card7">
+            <img src="./img/card7.png" alt="" srcset="" class="img">
+            <img src="./img/coverp.png" alt="" class="cover">
+        </div>
+        <div class="card-game" data-framework="card8">
+            <img src="./img/card8.png" alt="" srcset="" class="img">
+            <img src="./img/coverp.png" alt="" class="cover">
+        </div>
+        <div class="card-game" data-framework="card3">
+            <img src="./img/card3.jpg" alt="" srcset="" class="img">
+            <img src="./img/coverp.png" alt="" class="cover">
+        </div>
+        <div class="card-game" data-framework="card6">
+            <img src="./img/card6.png" alt="" srcset="" class="img">
+            <img src="./img/coverp.png" alt="" class="cover">
+        </div>
+        <div class="card-game" data-framework="card2">
+            <img src="./img/card2.png" alt="" srcset="" class="img">
+            <img src="./img/coverp.png" alt="" class="cover">
+        </div>
+        <div class="card-game" data-framework="card7">
+            <img src="./img/card7.png" alt="" srcset="" class="img">
+            <img src="./img/coverp.png" alt="" class="cover">
+        </div>
+
+    </section>
+    <div class="footer-game">Design and developed by <span>Thura Hein</span></div>
+    <script>
+        cards = document.querySelectorAll(".card-game");
+        hasturnCard = false;
+        closeCard = false;
+
+        cards.forEach((card) => card.addEventListener("click", clickCard));
+
+        (function redom() {
+            cards.forEach((card) => {
+                let randomPos = Math.floor(Math.random() * 12); //3.2 or 3
+                card.style.order = randomPos;
+            });
+        })();
+    </script>
+</body>
+
+</html>
